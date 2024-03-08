@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get ( 'greeting', function () {
+Route::get ( 'hello/{name}', function ($name) {
 
-    return 'hello word';
+    return 'Hello ' . $name;
 
     } );
